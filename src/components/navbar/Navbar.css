@@ -1,0 +1,150 @@
+body {
+  background-color: rgb(201, 201, 201);
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  font-family: "Montserrat", sans-serif;
+ 
+}
+
+.navbar {
+  display: flex;
+  background-color: #bcbcbc;
+  background: linear-gradient(
+    to right,
+    #cccccc 0,
+    rgb(216, 216, 216) 50%,
+    #cecece 100%
+  );
+
+  /* width: 100%; */
+  /* height: 5rem; */
+  padding: 0.3rem 8%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+.logo {
+  /* height: 100%; */
+  width: 5rem;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .menu ul {
+  display: flex;
+  /* flex-direction: column; */
+  list-style: none;
+  justify-content: space-around;
+
+  margin: 0 1rem;
+}
+.navbar .menu ul li {
+  padding: 0 1rem;
+  font-size: 18px;
+
+  color: #512c0e;
+}
+
+.callnow a {
+  color: #512c0e;
+  list-style: none;
+
+  border: 1px solid #512c0e;
+  padding: 1rem;
+  font-size: 14px;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.callnow a:hover {
+  color: #dedede;
+  background-color: #512c0e;
+}
+
+.openmenu {
+  display: none;
+}
+.mobilemenu {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .openmenu {
+    display: block;
+  }
+
+  .callnow {
+    display: none;
+  }
+
+  .menu li {
+    display: none;
+  }
+
+  .mobilemenu {
+    display: block;
+    position: absolute;
+
+    top: -50rem;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    z-index: 1000;
+    background-color: rgba(179, 179, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* flex-direction: column; */
+  }
+
+  .mobilemenu ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobilemenu ul a {
+    font-size: 20px;
+    color: #512c0e;
+    font-weight: bolder;
+    margin: 2rem 0rem;
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid rgb(55, 55, 55, 0.2);
+
+    width: 100vw;
+    /* background-color: #bcbcbc; */
+  }
+
+  .active {
+    top: 0;
+  }
+  .closeicons {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+  }
+}
+

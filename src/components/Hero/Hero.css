@@ -1,0 +1,126 @@
+
+
+.hero{
+   
+}
+.videobg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+ 
+    /* overflow: hidden; */
+  }
+  
+  .videobg video {
+    position: absolute;
+    /* top: -6rem; */
+    left: 0;
+
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    z-index: -10;   
+  }
+  .videobg .content {
+
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+background-color: rgb(14, 13, 13, .6);
+
+
+}  
+.videobg .content h1 {
+color: #d6d6d6;
+font-size: 2rem;text-align: center;
+position: relative;
+
+}
+.videobg .content h1 span {
+    font-size: 5rem;
+    position: relative;
+
+color: #622A00;
+
+
+}
+
+.btn-shine{
+position: absolute;
+/* top: 50%;
+left: 50%; */
+transform: translate(-50%,-50%);
+/* padding: 12px 48px; */
+/* color: #dc0a0a; */
+background: linear-gradient(to right, #4d4d4d 0, white 18%, #4d4d4d 100%);
+background-position: 0;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: shine 3s infinite linear;
+animation-fill-mode: forwards;
+-webkit-text-size-adjust: none;
+font-weight: 600;
+font-size: 16px;
+text-decoration: none;
+white-space: nowrap;
+ 
+}
+
+@keyframes shine {
+    0% {
+      background-position: 0px;
+    }
+    60% {
+      background-position: 180px;
+    }
+    80% {
+      background-position:  360px;
+    } 
+    100% {
+      background-position:  490px;
+    } 
+    
+  }
+  
+  
+
+
+
+@media screen and (max-width: 710px) {
+    .videobg .content h1 span {
+
+        font-size: 4.5rem;
+ 
+
+    }
+
+}
+@media screen and (max-width: 580px) {
+    .videobg .content h1 {
+
+        font-size: 1.5rem;
+
+    }
+     .videobg .content h1 span {
+
+        font-size: 3.7rem;
+
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .videobg .content h1 {
+
+        font-size: 1.2rem;
+
+    }
+   
+    .videobg .content h1 span {
+
+        font-size: 3rem;
+
+    }
+
+}
